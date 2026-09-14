@@ -1,0 +1,10 @@
+{
+  "cssTheme": "",
+  "accentColor": "#6b4ce6",
+  "theme": "system",
+  "baseFontSize": 16,
+  "showRibbon": true,
+  "enabledCssSnippets": [
+    "my"
+  ]
+}
