@@ -1,6 +1,6 @@
-## 配置文件
+# 配置文件
 
-### eslint and prettier
+## eslint and prettier
 
 ```json5
 {
@@ -37,3 +37,8 @@
   "prettier.endOfLine": "lf",
 }
 ```
+
+# vscode 关联continue加载ollama模型
+[vscode + continue + ollama 教程](https://blog.csdn.net/2301_78398877/article/details/162314843)
+
+
