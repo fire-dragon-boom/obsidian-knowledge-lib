@@ -46,15 +46,22 @@ F:\ProgramData\nodejs_package_manager\npm\global
 ## pnpm
 
 ### 独立安装（不依赖nodejs和npm）
+官网命令
+```powershell
+Invoke-WebRequest https://get.pnpm.io/install.ps1 -UseBasicParsing | Invoke-Expression
+```
 
 
-
-
-### 更新
-**独立安装升级**
+#### 更新
 ```bash
 pnpm self-update
 ```
+
+#### 卸载
+```text
+To uninstall, delete C:\Users\Admin\AppData\Local\pnpm, then remove the PNPM_HOME variable and the Path entry pnpm setup added from your user environment variables.
+```
+
 ### 配置目录
 
 🛠️ 核心配置命令
