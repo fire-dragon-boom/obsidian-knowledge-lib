@@ -35,3 +35,14 @@ office应用旧版本安装文件缓存，可删除
     - **说明**：这通常是病毒库的某个临时更新包或残留。
         
     - **操作**：可以删除。通常 Defender 只保留最新的一个版本，旧版本可以清掉。
+
+
+
+## 4. local/Temp临时文件夹
+C:\Users\Admin\AppData\Local\Temp
+这个文件夹下的东西直接删除
+
+
+## 5. C:\Windows\System32下
+#### 5.1 **`DriverStore\FileRepository`**
+windows 驱动备份仓库，
