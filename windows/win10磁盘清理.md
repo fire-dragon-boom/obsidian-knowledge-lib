@@ -8,6 +8,12 @@ C:\Program Files\Microsoft OneDrive
 ![](assets/win10磁盘清理/file-20261014172020602.png)
 
 ## 2. NVIDIA
+C:\ProgramData\NVIDIA Corporation\Downloader
+这个下面有一个残留的安装程序文件夹
+
+C:\Users\Admin\AppData\Local\NVIDIA\DXCache
+这是dx缓存，可以删除，再使用中就跳过
+
 
 
 
