@@ -51,7 +51,6 @@ F:\ProgramData\nodejs_package_manager\npm\global
 Invoke-WebRequest https://get.pnpm.io/install.ps1 -UseBasicParsing | Invoke-Expression
 ```
 
-
 #### 更新
 ```bash
 pnpm self-update
