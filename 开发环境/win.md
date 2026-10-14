@@ -45,45 +45,48 @@ F:\ProgramData\nodejs_package_manager\npm\global
 
 ## pnpm
 
-pnpm 的配置逻辑和 npm 不太一样，它把“缓存”和“全局包”的概念做了更细的拆分。结合你之前的路径规划，可以这样设置：
+### 独立安装（不依赖nodejs和npm）
 
-### 对应你规划路径的 pnpm 配置
 
-pnpm 没有直接对应 npm `cache` 的单一选项，它的核心是 **`store-dir`**（存储所有包内容的地方，相当于更底层的缓存），以及 **`global-dir`** 和 **`global-bin-dir`**（分别管全局包的 node_modules 和可执行文件）。
 
-参考你的路径，可以这样映射：
 
-| 你的 npm 路径        | 对应的 pnpm 配置项     | 建议的 pnpm 路径                                             |
-| :--------------- | :--------------- | :------------------------------------------------------ |
-| `...\npm\cache`  | `store-dir`      | `F:\ProgramData\nodejs_package_manager\pnpm\store`      |
-| `...\npm\global` | `global-dir`     | `F:\ProgramData\nodejs_package_manager\pnpm\global`     |
-| （无直接对应，但需要）      | `global-bin-dir` | `F:\ProgramData\nodejs_package_manager\pnpm\global\bin` |
+### 更新
+**独立安装升级**
+```bash
+pnpm self-update
+```
+### 配置目录
 
-### 设置命令
+🛠️ 核心配置命令
 
-和 npm 一样，用 `pnpm config set` 来写入配置：
-
+|配置类型|执行命令|说明|
+|---|---|---|
+|**1. 依赖缓存主存储（最重要）**|`pnpm config set store-dir "你的目标路径"`|存放所有项目的共享依赖包。**路径中切勿包含中文**。|
+|**2. 全局安装包位置**|`pnpm config set global-dir "你的目标路径"`|存放通过 `pnpm add -g` 安装的全局工具。|
+|**3. 全局二进制可执行文件**|`pnpm config set global-bin-dir "你的目标路径"`|存放全局命令的快捷方式（需将此路径手动加入系统环境变量 `Path`）。|
+|**4. 状态/缓存数据**|`pnpm config set state-dir "你的目标路径"`|存放 pnpm 运行时的状态记录与元数据。|
+配置示例代码
 ```bash
 pnpm config set store-dir "F:\ProgramData\nodejs_package_manager\pnpm\store"
 pnpm config set global-dir "F:\ProgramData\nodejs_package_manager\pnpm\global"
 pnpm config set global-bin-dir "F:\ProgramData\nodejs_package_manager\pnpm\global\bin"
+pnpm config set state-dir "F:\ProgramData\nodejs_package_manager\pnpm\state"
 ```
-
-**需要留意**：`global-bin-dir` 是 pnpm 用来存放 `tsc`、`vite` 这类全局命令可执行文件的地方。你需要把这个 `bin` 目录（而不是 global 根目录）加到**系统变量 Path** 里。
-
-### 关于“对所有用户生效”
-
-和 npm 的情况类似，`pnpm config set` 默认只写入当前用户的配置文件（Windows 上通常在 `~/AppData/Local/pnpm/config/rc` 或 `.npmrc`），只对当前用户生效。
-
-如果你想对所有用户生效，有两种更稳妥的方式：
-
-1.  **设置系统环境变量**：创建 `PNPM_HOME` 系统变量，指向 `F:\ProgramData\nodejs_package_manager\pnpm\global`。pnpm 很多路径（尤其是 `global-bin-dir`）会基于它来计算。
-2.  **使用 `--global` 标志**：执行 `pnpm config set <key> <value> --global`。不过要注意，pnpm 的全局配置文件位置可能随版本变化，升级时不如环境变量稳定。
-
-### 一个重要的版本差异
-
-pnpm v11 调整了全局命令的存放策略：现在全局安装的二进制文件会放在 `PNPM_HOME` 下的 **`bin` 子目录**里，而不是直接放在 `PNPM_HOME` 根下。所以如果你用的是较新版本，记得把 `...\pnpm\global\bin` 这个路径加进 Path。
-
+验证
+```bash
+pnpm config list
+```
+Windows 10 关键环境变量配置
+```text
+path路径添加可执行文件目录
+F:\ProgramData\nodejs_package_manager\pnpm\global\bin
+```
+全局包安装验证
+```bash
+pnpm add -g rimraf
+rimraf --version
+pnpm rm -g rimraf
+```
 
 
 
