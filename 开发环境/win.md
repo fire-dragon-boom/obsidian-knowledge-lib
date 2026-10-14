@@ -3,8 +3,8 @@
 
 
 ## npm
-# 设置新文件位置
-## 1. 设置命令
+
+### 1. 设置命令
 
 ```bash
 npm config set cache "F:\ProgramData\nodejs_package_manager\npm\cache"
@@ -19,7 +19,7 @@ npm config get prefix
 ```
 
 
-## 2. 这两个目录里会生成什么
+### 2. 这两个目录里会生成什么
 **`F:\ProgramData\nodejs_package_manager\npm\cache`**
 - `_cacache`：npm 的包缓存，按内容哈希存储，不是按包名。
 - `_logs`：npm 运行日志。
@@ -28,7 +28,7 @@ npm config get prefix
 - 根目录下直接出现 `.cmd` / `.bat` / `.ps1` 等可执行文件，比如 `tsc.cmd`、`npm.cmd`、`npx.cmd` 等。
 
 
-## 3. 关键一步：把 global 根目录加入 PATH
+### 3. 关键一步：把 global 根目录加入 PATH
 
 因为 Windows 上全局命令的可执行文件就在 `prefix` 的**根下**，所以需要把：
 
@@ -44,8 +44,6 @@ F:\ProgramData\nodejs_package_manager\npm\global
 
 
 ## pnpm
-
-# 设置新文件位置
 
 pnpm 的配置逻辑和 npm 不太一样，它把“缓存”和“全局包”的概念做了更细的拆分。结合你之前的路径规划，可以这样设置：
 
