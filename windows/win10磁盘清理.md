@@ -87,3 +87,7 @@ C:\Users\Admin\AppData\Local\JetBrains
 
 ### 7.1 JetBrains
 C:\Users\Admin\AppData\Roaming\JetBrains
+![](assets/win10磁盘清理/file-20261014182433958.png)
+这里是软件的配置文件，删除旧版本的不用的
+
+
