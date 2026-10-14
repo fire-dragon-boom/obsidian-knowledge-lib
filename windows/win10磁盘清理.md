@@ -91,3 +91,6 @@ C:\Users\Admin\AppData\Roaming\JetBrains
 这里是软件的配置文件，删除旧版本的不用的
 
 
+### 7.2 Google
+C:\Users\Admin\AppData\Roaming\Google
+
