@@ -19,6 +19,19 @@ C:\Users\Admin\AppData\Local\NVIDIA\DXCache
 ### 3.1 search是索引结果，不要删除，通过重建来瘦身
 ![850](assets/win10磁盘清理/file-20261014173408933.png)
 
+### 3.2 ClickToRun\ProductReleases
+office应用旧版本安装文件缓存，可删除
 
+### 3.3 Window Defender
 
-
+1. **`Windows Defender\Definition Updates\Backup` (443 MB)**
+    
+    - **说明**：这是 Windows Defender 病毒库更新前的**旧版本备份**。
+        
+    - **操作**：**可以安全删除**。Defender 如果更新出问题，会自动重新下载，不需要这个旧备份。
+        
+2. **`Windows Defender\Definition Updates\{E707...}` (224 MB)**
+    
+    - **说明**：这通常是病毒库的某个临时更新包或残留。
+        
+    - **操作**：可以删除。通常 Defender 只保留最新的一个版本，旧版本可以清掉。
