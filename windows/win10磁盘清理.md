@@ -45,4 +45,4 @@ C:\Users\Admin\AppData\Local\Temp
 
 ## 5. C:\Windows\System32下
 #### 5.1 **`DriverStore\FileRepository`**
-windows 驱动备份仓库，
+windows 驱动备份仓库
