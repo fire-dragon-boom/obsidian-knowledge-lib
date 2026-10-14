@@ -6,5 +6,16 @@ Windows+G：打开游戏控制中心。
 Windows+L：锁定电脑屏幕。  
 Windows+X，再按两次U键：关闭电脑。
 
+# WIN + R
+```text
+1. 打开系统属性窗口，可以配置环境变量
+sysdm.cpl
+
+
+
+
+```
+
+
 # 网络
 - 
