@@ -76,5 +76,6 @@ windows 驱动备份仓库
 C:\Users\Admin\AppData\Local\Google
 ![](assets/win10磁盘清理/file-20261014181118666.png)
 
-chrome 不处理，删除旧版本的Android
+chrome 不处理，删除旧版本的Androidstudio
+
 
