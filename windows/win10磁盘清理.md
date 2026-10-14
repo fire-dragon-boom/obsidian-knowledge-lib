@@ -83,6 +83,7 @@ C:\Users\Admin\AppData\Local\JetBrains
 ![](assets/win10磁盘清理/file-20261014182045095.png)
 清理旧版本软件
 
+## 7. C:\Users\Admin\AppData\Roaming
 
-
-
+### 7.1 JetBrains
+C:\Users\Admin\AppData\Roaming\JetBrains
