@@ -46,3 +46,5 @@ C:\Users\Admin\AppData\Local\Temp
 ## 5. C:\Windows\System32下
 #### 5.1 **`DriverStore\FileRepository`**
 windows 驱动备份仓库
+使用DriverStoreExplorer软件来进行删除
+![](assets/win10磁盘清理/file-20261014175913648.png)
