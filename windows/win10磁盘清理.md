@@ -61,7 +61,7 @@ windows 驱动备份仓库
     
 - **如何安全清理（绝对不能直接删文件夹）**：
     
-    1. 以**管理员身份**运行命令提示符（CMD）或 PowerShell。
+    1. 以**管理员身份**运行命令提示符（CMD）或 PowerShell。(经实践，需要使用**cmd管理员**)
         
     2. 输入以下命令并回车：  
         `%windir%\Microsoft.NET\Framework64\v4.0.30319\ngen.exe update`  
