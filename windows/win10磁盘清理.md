@@ -78,5 +78,11 @@ C:\Users\Admin\AppData\Local\Google
 
 chrome 不处理，删除旧版本的Androidstudio（查看当前使用版本）
 
+### 6.2 JetBrains
+C:\Users\Admin\AppData\Local\JetBrains
+![](assets/win10磁盘清理/file-20261014182045095.png)
+清理旧版本软件
+
+
 
 
