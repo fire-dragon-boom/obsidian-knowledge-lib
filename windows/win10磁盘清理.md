@@ -16,7 +16,8 @@ C:\Users\Admin\AppData\Local\NVIDIA\DXCache
 
 ## 3. C:\ProgramData\Microsoft
 ![](assets/win10磁盘清理/file-20261014172841534.png)
-search是索引结果，
+### 3.1 search是索引结果，不要删除，通过重建来瘦身
+![850](assets/win10磁盘清理/file-20261014173408933.png)
 
 
 
