@@ -14,8 +14,9 @@ C:\ProgramData\NVIDIA Corporation\Downloader
 C:\Users\Admin\AppData\Local\NVIDIA\DXCache
 这是dx缓存，可以删除，再使用中就跳过
 
-
-
+## 3. C:\ProgramData\Microsoft
+![](assets/win10磁盘清理/file-20261014172841534.png)
+search是索引结果，
 
 
 
