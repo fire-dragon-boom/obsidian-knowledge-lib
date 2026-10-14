@@ -70,3 +70,9 @@ windows 驱动备份仓库
     3. 这个命令会重新生成最新的缓存，并自动清理掉不再需要的旧版本文件。这个过程可能需要几分钟，请耐心等待。
 
 
+## 6. C:\Users\Admin\AppData\Local
+
+### 6.1 Google
+C:\Users\Admin\AppData\Local\Google
+
+
