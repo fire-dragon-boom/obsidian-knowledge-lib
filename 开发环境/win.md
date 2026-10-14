@@ -62,7 +62,7 @@ pnpm self-update
 To uninstall, delete C:\Users\Admin\AppData\Local\pnpm, then remove the PNPM_HOME variable and the Path entry pnpm setup added from your user environment variables.
 ```
 
-### 配置目录
+### 配置
 
 🛠️ 核心配置命令
 
